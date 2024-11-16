@@ -1,0 +1,15 @@
+meta {
+  name: Get Vietnam District
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{protocol}}://{{host}}/vietnam/district/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

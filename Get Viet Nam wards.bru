@@ -1,0 +1,15 @@
+meta {
+  name: Get Viet Nam wards
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{protocol}}://{{host}}/vietnam/ward/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}

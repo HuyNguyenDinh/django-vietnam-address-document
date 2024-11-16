@@ -1,0 +1,23 @@
+meta {
+  name: Create User Address
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{protocol}}://{{host}}/vietnam/user-address/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+body:json {
+  {
+    "ward": "00046",
+    "street": "135 Hoang Minh Chanh",
+    "name": "Nha rieng"
+  }
+}

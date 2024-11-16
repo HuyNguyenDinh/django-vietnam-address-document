@@ -1,0 +1,25 @@
+meta {
+  name: Update User Address
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{protocol}}://{{host}}/vietnam/user-address/:address-id/
+  body: json
+  auth: none
+}
+
+params:path {
+  address-id: 1
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+body:json {
+  {
+    "ward": "00046"
+  }
+}

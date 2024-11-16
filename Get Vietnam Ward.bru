@@ -1,0 +1,19 @@
+meta {
+  name: Get Vietnam Ward
+  type: http
+  seq: 11
+}
+
+get {
+  url: {{protocol}}://{{host}}/vietnam/district/?province__code=01
+  body: none
+  auth: none
+}
+
+params:query {
+  province__code: 01
+}
+
+headers {
+  Authorization: {{token}}
+}
